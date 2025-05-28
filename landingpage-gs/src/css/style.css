@@ -63,7 +63,7 @@ main {
 /* OUTROS ESTILOS */
 .section1 {
   display: flex;
-  font-size: 60px;
+  font-size: 30px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -80,10 +80,52 @@ main h1 {
 }
 
 img {
-  height: 600px;
+  height: 500px;
   max-width: 100%;
 }
 
 p {
   font-family: 'EBGaramond', sans-serif;
+}
+
+.textoPrincipal{
+  display: flex;
+  align-items: center;
+  padding-left: 340px;
+  padding-top: 130px;
+  font-size: 25px;
+}
+
+.sessao1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 20px;
+}
+
+.textoSessao1{
+  max-width: 500px;
+  padding-top: 20px;
+}
+
+.textoSessao1 p {
+  margin-bottom: 20px;
+}
+
+.sessao2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 20px;
+}
+
+.textoSessao2{
+  max-width: 500px;
+  padding-top: 20px;
+}
+
+.textoSessao2 p {
+  margin-bottom: 20px;
 }
