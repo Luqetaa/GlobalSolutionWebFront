@@ -29,7 +29,7 @@
         </div>    
         <div class="textoPrincipal"></div>
 
-        <div class="sessao1">
+        <div class="sessao1 scroll-animada">
             <div class="img-container ">
             <img src="./src/imgs/pexels-photo-2929255.jpeg" alt=""></div>
             <div class="textoSessao1">
@@ -41,8 +41,8 @@
 
         <div class="textoPrincipal">Tecnologias</div>
 
-        <div class="sessao2">
-            <div class="img-container">
+        <div class="sessao2 scroll-animada">
+            <div class="img-container ">
             <img src="./src/imgs/pexels-photo-2929255.jpeg" alt=""></div>
             <div class="textoSessao2">
                     <p>Enchentes causam perdas humanas e materiais todos os anos em áreas urbanas vulneráveis.</p>
@@ -51,7 +51,89 @@
             </div>
         </div>
 
+        <section class="sessao-beneficios scroll-animada">
+            <div class="texto-beneficios">
+                <h2>See the Big Picture</h2>
+                <p>
+                A RIVUR transforma dados em visualizações claras e vibrantes, mostrando exatamente o que está acontecendo em cada região.
+                </p>
+                <ul class="lista-beneficios">
+                <li><strong>01</strong> Spot Trends in Seconds: No more digging through numbers.</li>
+                <li><strong>02</strong> Get Everyone on the Same Page: Share easy-to-understand reports with your team.</li>
+                <li><strong>03</strong> Make Presentations Pop: Interactive maps and dashboards keep your audience engaged.</li>
+                <li><strong>04</strong> Your Global Snapshot: Get a quick, clear overview of your entire operation.</li>
+                </ul>
+                <button class="botao-beneficios">Discover More</button>
+            </div>
+
+           <div class="imagem-slideshow">
+                <div class="slide fade">
+                    <img src="./src/imgs/riverbloco.jpeg" alt="Visual gráfico de dados 1">
+                </div>
+
+                <div class="slide fade">
+                    <img src="./src/imgs/placabloco.jpeg" alt="Visual gráfico de dados 2">
+                </div>
+
+                <div class="slide fade">
+                    <img src="./src/imgs/pinheirobloco.jpeg" alt="Visual gráfico de dados 3">
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+        </section>
+
     </main>
+<script>
+    const elementos = document.querySelectorAll('.scroll-animada');
+
+    const observer = new IntersectionObserver((entradas) => {
+        entradas.forEach(entrada => {
+        if (entrada.isIntersecting) {
+            entrada.target.classList.add('mostrar');
+        }
+        });
+    }, { threshold: 0.1 });
+
+    elementos.forEach(el => observer.observe(el));
     
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".slide");
+    const progressBar = document.getElementById("progressBar");
+    const slideshowSpeed = 5000; // Time in milliseconds between slides
+    let timer;
+
+    function showSlides() {
+        // Clear any existing timer to prevent multiple timers running
+        clearTimeout(timer);
+
+        // Reset progress bar for the new slide
+        progressBar.style.transition = 'none'; // Temporarily remove transition
+        progressBar.style.width = '0%';       // Reset width
+        
+        let i;
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+
+        // Start the progress bar animation after a small delay to allow reset to apply
+        setTimeout(() => {
+            progressBar.style.transition = `width ${slideshowSpeed / 1000}s linear`;
+            progressBar.style.width = '100%';
+        }, 50); // Small delay, e.g., 50ms
+
+        // Set timer for the next slide change
+        timer = setTimeout(showSlides, slideshowSpeed);
+    }
+    showSlides();
+</script>
+
 </body>
 </html>

@@ -111,6 +111,16 @@ main h1 {
   animation: fadeSlideIn 1.5s ease-out forwards;
   animation: blurFadeIn 1s ease-out forwards;
 }
+.scroll-animada {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out;
+}
+
+.scroll-animada.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 @keyframes blurFadeIn {
   to {
@@ -170,4 +180,106 @@ p {
 
 .textoSessao2 p {
   margin-bottom: 20px;
+}
+.sessao-beneficios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+  padding-left: 340px;
+  padding-right: 80px;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.texto-beneficios {
+  flex: 1;
+  max-width: 600px;
+}
+
+.texto-beneficios h2 {
+  font-family: 'EBGaramondBold', serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.texto-beneficios p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.lista-beneficios {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.lista-beneficios li {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+  font-family: 'EBGaramond', serif;
+}
+
+.lista-beneficios li strong {
+  display: inline-block;
+  width: 30px;
+  color: #888;
+}
+
+.botao-beneficios {
+  background-color: #CDE3CE;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-family: 'EBGaramondBold', serif;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Slideshow container */
+.imagem-slideshow {
+ position: relative;
+ width: 100%;
+ max-width: 500px; /* Adjust as needed */
+ height: auto; /* Adjust if you want a fixed height */
+ margin-right: 240px;
+}
+
+/* Hide the images by default */
+.slide {
+ display: none;
+}
+
+/* Fading animation */
+.fade {
+ animation-name: fade;
+ animation-duration: 1.5s;
+}
+
+@keyframes fade {
+ from {opacity: .4}
+ to {opacity: 1}
+}
+
+/* Progress Bar container */
+.progress-container {
+ position: absolute;
+ bottom: 20px;
+ left: 20px;
+ width: 292px;
+ height: 5px;
+ background-color: #ddd;
+ border-radius: 5px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #90a07f;
+  border-radius: 5px;
+  /* Add this line for smooth transition */
+  transition: width linear; /* The duration will be set by JS */
 }
