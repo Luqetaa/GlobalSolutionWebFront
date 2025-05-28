@@ -18,7 +18,7 @@
 }
 .titulo-cabecalho {
   font-family: 'EBGaramondSemi',sans-serif;
-  font-size: 22px;
+  font-size: 55px;
   color: black;
   margin-bottom: 10px;
   padding-left: 340px; 
@@ -29,7 +29,7 @@
 /* NAVBAR RETANGULAR CENTRALIZADA */
 header {
   position: fixed;
-  top: 20px;
+  top: 45px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -70,12 +70,29 @@ main {
 }
 
 /* OUTROS ESTILOS */
-.section1 {
+.TextoTituloSessao {
   display: flex;
   font-size: 30px;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.fade-in-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 1.6s ease-out forwards;
+  font-family: 'EBGaramondBold', sans-serif;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 main h1 {
@@ -87,10 +104,26 @@ main h1 {
   justify-content: center;
   align-items: center;
 }
+.img-container img {
+  opacity: 0;
+  filter: blur(10px);
+  transform: scale(1.05);
+  animation: fadeSlideIn 1.5s ease-out forwards;
+  animation: blurFadeIn 1s ease-out forwards;
+}
+
+@keyframes blurFadeIn {
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+  }
+}
 
 img {
   height: 500px;
   max-width: 100%;
+  border-radius: 15px;
 }
 
 p {
