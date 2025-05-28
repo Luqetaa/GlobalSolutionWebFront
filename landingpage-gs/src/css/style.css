@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'EBGaramondBold';
-  src: url('/src/fonts/EBGaramond-Bold.ttf') format('truetype'); 
+  src: url('/landingpage-gs/src/fonts/EBGaramond-Bold.ttf') format('truetype'); 
 }
 @font-face {
   font-family: 'EBGaramondSemi';
-  src: url('/src/fonts/EBGaramond-SemiBold.ttf') format('truetype'); 
+  src: url('/landingpage-gs/src/fonts/EBGaramond-SemiBold.ttf') format('truetype'); 
 }
 @font-face {
   font-family: 'EBGaramond';
-  src: url('/src/fonts/EBGaramond-Regular.ttf') format('truetype'); 
+  src: url('/landingpage-gs/src/fonts/EBGaramond-Regular.ttf') format('truetype'); 
 }
 
 * {
@@ -16,6 +16,15 @@
   margin: 0;
   padding: 0;
 }
+.titulo-cabecalho {
+  font-family: 'EBGaramondSemi',sans-serif;
+  font-size: 22px;
+  color: black;
+  margin-bottom: 10px;
+  padding-left: 340px; 
+  padding-top: 25px;
+}
+
 
 /* NAVBAR RETANGULAR CENTRALIZADA */
 header {
@@ -51,7 +60,7 @@ header {
 }
 
 .navbar li a:hover {
-  color: rgb(102, 102, 102);
+  color: rgb(110, 110, 110);
   
 }
 
@@ -70,7 +79,7 @@ main {
 }
 
 main h1 {
-  font-family: 'EBGaramondSemi', sans-serif;
+  font-family: 'EBGaramondBold', sans-serif;
 }
 
 .img-container {
