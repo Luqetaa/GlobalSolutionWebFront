@@ -136,10 +136,6 @@ img {
   border-radius: 15px;
 }
 
-p {
-  font-family: 'EBGaramond', sans-serif;
-}
-
 .textoPrincipal{
   display: flex;
   align-items: center;
@@ -194,19 +190,19 @@ p {
 
 .texto-beneficios {
   flex: 1;
-  max-width: 600px;
 }
 
 .texto-beneficios h2 {
   font-family: 'EBGaramondBold', serif;
-  font-size: 40px;
+  font-size: 60px;
   margin-bottom: 10px;
 }
 
 .texto-beneficios p {
-  font-size: 16px;
+  font-size: 15px;
   color: #444;
   margin-bottom: 25px;
+  font-family: sans-serif;
 }
 
 .lista-beneficios {
@@ -231,6 +227,7 @@ button {
   color: #090909;
   padding: 8px 10px;
   font-size: 16px;
+  font-family: sans-serif;
   border-radius: 0.5em;
   background: #f0efef;
   cursor: pointer;
@@ -240,7 +237,6 @@ button {
 }
 
 button:active {
-  color: #666;
   box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 
@@ -250,7 +246,7 @@ button:active {
  width: 100%;
  max-width: 500px; 
  height: auto; 
- margin-right: 240px;
+ margin-right: 180px;
 }
 
 .fade {
@@ -265,7 +261,8 @@ button:active {
 
 .progress-container {
  position: absolute;
- bottom: 20px;
+ top: 20px;
+ 
  left: 20px;
  width: 292px;
  height: 5px;
