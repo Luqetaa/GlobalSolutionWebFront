@@ -53,9 +53,9 @@
 
         <section class="sessao-beneficios scroll-animada">
             <div class="texto-beneficios">
-                <h2>See the Big Picture</h2>
+                <h2>Analise de Big Data</h2>
                 <p>
-                A RIVUR transforma dados em visualizações claras e vibrantes, mostrando exatamente o que está acontecendo em cada região.
+                A Rivur transforma dados em visualizações claras e vibrantes, mostrando exatamente o que está acontecendo em cada região.
                 </p>
                 <ul class="lista-beneficios">
                 <li><strong>01</strong> Spot Trends in Seconds: No more digging through numbers.</li>
@@ -63,7 +63,7 @@
                 <li><strong>03</strong> Make Presentations Pop: Interactive maps and dashboards keep your audience engaged.</li>
                 <li><strong>04</strong> Your Global Snapshot: Get a quick, clear overview of your entire operation.</li>
                 </ul>
-                <button class="botao-beneficios">Discover More</button>
+                <button>Leia Mais</button>
             </div>
 
            <div class="imagem-slideshow">
@@ -102,16 +102,15 @@
     let slideIndex = 0;
     const slides = document.querySelectorAll(".slide");
     const progressBar = document.getElementById("progressBar");
-    const slideshowSpeed = 5000; // Time in milliseconds between slides
+    const slideshowSpeed = 5000; 
     let timer;
 
     function showSlides() {
-        // Clear any existing timer to prevent multiple timers running
+ 
         clearTimeout(timer);
 
-        // Reset progress bar for the new slide
-        progressBar.style.transition = 'none'; // Temporarily remove transition
-        progressBar.style.width = '0%';       // Reset width
+        progressBar.style.transition = 'none'; 
+        progressBar.style.width = '0%';       
         
         let i;
         for (i = 0; i < slides.length; i++) {
@@ -123,13 +122,11 @@
         }
         slides[slideIndex - 1].style.display = "block";
 
-        // Start the progress bar animation after a small delay to allow reset to apply
         setTimeout(() => {
             progressBar.style.transition = `width ${slideshowSpeed / 1000}s linear`;
             progressBar.style.width = '100%';
-        }, 50); // Small delay, e.g., 50ms
+        }, 50); 
 
-        // Set timer for the next slide change
         timer = setTimeout(showSlides, slideshowSpeed);
     }
     showSlides();

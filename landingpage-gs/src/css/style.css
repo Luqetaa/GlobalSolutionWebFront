@@ -227,35 +227,35 @@ p {
   color: #888;
 }
 
-.botao-beneficios {
-  background-color: #CDE3CE;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-weight: bold;
-  font-family: 'EBGaramondBold', serif;
+button {
+  color: #090909;
+  padding: 8px 10px;
+  font-size: 16px;
+  border-radius: 0.5em;
+  background: #f0efef;
   cursor: pointer;
-  transition: background 0.3s;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 
-/* Slideshow container */
+button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+
 .imagem-slideshow {
  position: relative;
  width: 100%;
- max-width: 500px; /* Adjust as needed */
- height: auto; /* Adjust if you want a fixed height */
+ max-width: 500px; 
+ height: auto; 
  margin-right: 240px;
 }
 
-/* Hide the images by default */
-.slide {
- display: none;
-}
-
-/* Fading animation */
 .fade {
  animation-name: fade;
- animation-duration: 1.5s;
+ animation-duration: 0.5s;
 }
 
 @keyframes fade {
@@ -263,7 +263,6 @@ p {
  to {opacity: 1}
 }
 
-/* Progress Bar container */
 .progress-container {
  position: absolute;
  bottom: 20px;
@@ -274,12 +273,10 @@ p {
  border-radius: 5px;
 }
 
-/* Progress Bar */
 .progress-bar {
   height: 100%;
   width: 0%;
   background-color: #90a07f;
   border-radius: 5px;
-  /* Add this line for smooth transition */
-  transition: width linear; /* The duration will be set by JS */
+  transition: width linear; 
 }
