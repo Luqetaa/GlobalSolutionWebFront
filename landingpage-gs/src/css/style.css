@@ -53,17 +53,64 @@ header {
 
 .navbar li a {
   text-decoration: none;
-  color: black;
+  color: #1e2630;
   font-family:monospace;
   font-size: 15px;
   padding: 4px 8px;
   border-radius: 40px;
   transition: all 0.3s ease;
+  font-weight: bold;
 }
 
 .navbar li a:hover {
-  color: rgb(110, 110, 110);
-  
+  color: #6d6d6d;
+}
+.radio-inputs {
+  position:absolute;
+  top: 45px;      
+  right: 280px;     
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 16px;
+  background-color: #EEE;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 300px;
+  font-size: 14px;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: #1e2630;
+  font-family: monospace;
+  transition: all .15s ease-in-out;
+  font-weight: bold;
+}
+
+.radio-inputs .radio input:checked + .name {
+  background: rgba(255, 255, 255, 0.29);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.336);
 }
 
 /* MAIN AJUSTADO PARA HEADER FIXO */
@@ -202,7 +249,7 @@ img {
 
 .texto-beneficios p {
   font-size: 15px;
-  color: #444;
+  color: #1e2630;
   margin-bottom: 25px;
   font-family: sans-serif;
 }
