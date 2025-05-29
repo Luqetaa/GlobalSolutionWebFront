@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="titulo-cabecalho">Rivur.</div> 
@@ -39,25 +42,26 @@
     </div>
 
     <main>
-
-        <div class="TextoTituloSessao">
-            <h1 class="fade-in-text">Monitoramento Inteligente contra Enchentes.</h1>
-        </div>    
-        <div class="textoPrincipal"></div>
-
         <div class="sessao1 scroll-animada">
-            <div class="img-container ">
-            <img src="./src/imgs/fotonotebook2.png" alt=""></div>
-            <div class="textoSessao1">
-                    <p>Enchentes causam perdas humanas e materiais todos os anos em áreas urbanas vulneráveis.</p>
-                    <p>A falta de monitoramento em tempo real agrava a situação e impede respostas rápidas.</p>
+            <div class="texto-sessao1">
+                <p class="tagline">Problemas</p>
+                <div class="texto-titulo">
+                    <h1>Monitoramento Inteligente contra Enchentes.</h1>
+                </div>  
+                <p>Enchentes no Brasil causam destruição, desalojam famílias, evidenciam falhas urbanas e exigem soluções urgentes.</p>
+                <button>Leia mais</button>
+            </div> 
+            <div class="img-container">
+                <div class="notebook-sombra-container">
+                    <img src="./src/imgs/sombra.png" alt="Sombra" class="notebook-sombra">
+                    <img src="./src/imgs/fotonotebook2.png" alt="Notebook" class="notebook-img">
+                </div>
             </div>
         </div>
 
+        
 
-        <div class="textoPrincipal">Tecnologias</div>
-
-        <div class="sessao2 scroll-animada">
+        <div class="sessao2 scroll-animada"><div class="tagline">Tecnologias</div>
             <div class="img-container ">
             <img src="./src/imgs/pexels-photo-2929255.jpeg" alt=""></div>
             <div class="textoSessao2">
@@ -67,13 +71,13 @@
             </div>
         </div>
 
-        <section class="sessao-beneficios scroll-animada">
-            <div class="texto-beneficios">
+        <section class="sessao3 scroll-animada">
+            <div class="texto-topico">
                 <h2>Analise de Big Data</h2>
                 <p>
                 A Rivur transforma dados em visualizações claras e vibrantes, mostrando exatamente o que está acontecendo em cada região.
                 </p>
-                <ul class="lista-beneficios">
+                <ul class="lista-topico">
                 <li><strong>01</strong> Coleta de Dados Ambientais em Tempo Real.</li>
                 <li><strong>02</strong> Integração com Dados Históricos.</li>
                 <li><strong>03</strong> Análise Preditiva com Inteligência Artificial.</li>
@@ -95,7 +99,7 @@
                     <img src="./src/imgs/pinheirobloco.jpeg" alt="Visual gráfico de dados 3">
                 </div>
 
-                <div class="progress-container">
+                <div class="container-progress">
                     <div class="progress-bar" id="progressBar"></div>
                 </div>
             </div>

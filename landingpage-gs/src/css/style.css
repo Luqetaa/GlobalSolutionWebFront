@@ -1,32 +1,33 @@
-@font-face {
-  font-family: 'EBGaramondBold';
-  src: url('/landingpage-gs/src/fonts/EBGaramond-Bold.ttf') format('truetype'); 
-}
-@font-face {
-  font-family: 'EBGaramondSemi';
-  src: url('/landingpage-gs/src/fonts/EBGaramond-SemiBold.ttf') format('truetype'); 
-}
-@font-face {
-  font-family: 'EBGaramond';
-  src: url('/landingpage-gs/src/fonts/EBGaramond-Regular.ttf') format('truetype'); 
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+/* variaveis */
+:root {
+  --main-bg-color: #fdfff0;
+  --second-bg-color: #B5C8A6;
+  --complementary-color: #325947;
+  --main-text-color: #262626;
+  
+}
+/* logo */
 .titulo-cabecalho {
-  font-family: 'EBGaramondSemi',sans-serif;
-  font-size: 55px;
-  color: black;
-  margin-bottom: 10px;
-  padding-left: 340px; 
+  font-family: 'EB Garamond';
+  font-weight: 900;
+  font-size: 75px;
+  color: #262626;
+  padding-left: 500px; 
   padding-top: 25px;
 }
 
+body {
+  font-family:'Poppins';
+  background-color: var(--main-bg-color);
+  color: #1e2630;
+}
 
-/* NAVBAR RETANGULAR CENTRALIZADA */
+/* cabeçalho */
 header {
   position: fixed;
   top: 45px;
@@ -35,7 +36,6 @@ header {
   justify-content: center;
   z-index: 1000;
 }
-
 .navbar {
   background: rgba(255, 255, 255, 0.29);
   border-radius: 16px;
@@ -65,15 +65,17 @@ header {
 .navbar li a:hover {
   color: #6d6d6d;
 }
+
+/* seletor de tema */
 .radio-inputs {
   position:absolute;
   top: 45px;      
-  right: 280px;     
+  right: 400px;     
   z-index: 1000;
   display: flex;
   flex-wrap: wrap;
   border-radius: 16px;
-  background-color: #EEE;
+  background-color: #dfe0d92c;
   box-sizing: border-box;
   box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
   padding: 0.25rem;
@@ -113,24 +115,93 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.336);
 }
 
-/* MAIN AJUSTADO PARA HEADER FIXO */
+/* main ajustado pro header fixo */
 main {
   padding-top: 120px;
 }
 
-/* OUTROS ESTILOS */
-.TextoTituloSessao {
+
+.sessao1 {
   display: flex;
-  font-size: 30px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start; /* Centraliza verticalmente */
+  justify-content: space-between; /* Espaça os dois lados */
+  gap: 60px;
+  padding: 80px 100px; /* Espaçamento interno mais proporcional */
 }
-.fade-in-text {
+
+.texto-sessao1 {
+  margin-left: 400px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tagline {
+  text-decoration: underline;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+
+}
+
+.texto-titulo {
+  font-size: 32px;
+  text-align: left;
+  margin-bottom: 16px;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeSlideIn 1.6s ease-out forwards;
-  font-family: 'EBGaramondBold', sans-serif;
+}
+
+.texto-titulo h1 {
+  font-family: 'EBGaramondBold', serif;
+  color: var(--main-text-color);
+  margin: 0;
+}
+
+.texto-sessao1 p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.img-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.notebook-sombra-container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.notebook-sombra {
+  position: absolute;
+  top: 12%;
+  transform: translateX(-50%);
+  width: 120%;
+}
+.notebook-img {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.img-container img {
+  width: 70%;
+  height: auto;
+  opacity: 0;
+  filter: blur(10px);
+  transform: scale(1.05);
+  animation: fadeSlideIn 1.5s ease-out forwards;
+  animation: blurFadeIn 1s ease-out forwards;
 }
 
 @keyframes fadeSlideIn {
@@ -148,18 +219,7 @@ main h1 {
   font-family: 'EBGaramondBold', sans-serif;
 }
 
-.img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.img-container img {
-  opacity: 0;
-  filter: blur(10px);
-  transform: scale(1.05);
-  animation: fadeSlideIn 1.5s ease-out forwards;
-  animation: blurFadeIn 1s ease-out forwards;
-}
+
 .scroll-animada {
   opacity: 0;
   transform: translateY(30px);
@@ -185,31 +245,6 @@ img {
   border-radius: 15px;
 }
 
-.textoPrincipal{
-  display: flex;
-  align-items: center;
-  padding-left: 340px;
-  padding-top: 130px;
-  font-size: 25px;
-}
-
-.sessao1{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 100px;
-  padding: 20px;
-}
-
-.textoSessao1{
-  max-width: 500px;
-  padding-top: 20px;
-}
-
-.textoSessao1 p {
-  margin-bottom: 20px;
-}
-
 .sessao2{
   display: flex;
   align-items: center;
@@ -226,7 +261,7 @@ img {
 .textoSessao2 p {
   margin-bottom: 20px;
 }
-.sessao-beneficios {
+.sessao3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -237,7 +272,7 @@ img {
   flex-wrap: wrap;
 }
 
-.texto-beneficios {
+.texto-topico {
   flex: 1;
 }
 
@@ -254,48 +289,50 @@ img {
   font-family: sans-serif;
 }
 
-.lista-beneficios {
+.lista-topico {
   list-style: none;
   padding: 0;
   margin-bottom: 40px;
 }
 
-.lista-beneficios li {
+.lista-topico li {
   border-bottom: 1px solid #ddd;
   padding: 12px 0;
   font-family: 'EBGaramond', serif;
 }
 
-.lista-beneficios li strong {
+.lista-topico li strong {
   display: inline-block;
   width: 30px;
   color: #888;
 }
 
+
 button {
-  color: #090909;
-  padding: 8px 10px;
-  font-size: 16px;
-  font-family: sans-serif;
-  border-radius: 0.5em;
-  background: #f0efef;
+  font-family: monospace;
+  font-size: 20px;
+  color: #252525;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #252525;
+  background: #fdfff0;
+  box-shadow: 3px 3px #252525;
   cursor: pointer;
-  border: 1px solid #e8e8e8;
-  transition: all 0.3s;
-  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  margin: 35px 0;
+  width: 180px;
 }
 
 button:active {
-  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  box-shadow: none;
+  transform: translate(3px, 3px);
 }
-
 
 .imagem-slideshow {
  position: relative;
  width: 100%;
  max-width: 500px; 
  height: auto; 
- margin-right: 180px;
+ margin-right: 160px;
 }
 
 .fade {
@@ -308,7 +345,7 @@ button:active {
   to {opacity: 1}
 }
 
-.progress-container {
+.container-progress {
   position: absolute;
   top: 20px;
   left: 20px;
