@@ -37,10 +37,9 @@
             
         <label class="radio">
             <input type="radio" name="radio">
-            <span class="name">Invertido</span>
+            <span class="name">Alternativo</span>
         </label>
     </div>
-    <hr>
     <main>
         <div class="sessao1 scroll-animada">
             <div class="texto-sessao1">
@@ -58,9 +57,9 @@
                 </div>
             </div>
         </div>
-        <hr>
         <div class="sessao2 ">
         <div class="texto-titulo scroll-animada">
+            <p class="tagline-centralizada">Objetivos</p>
             <h1>Nossos Objetivos</h1>
         </div>
         <div class="texto-sessao2 scroll-animada">
@@ -81,7 +80,6 @@
             </div>
         </div>
         </div>
-
         <div class="sessao1 scroll-animada">
             <div class="texto-sessao1">
                 <p class="tagline">Tecnologias</p>
@@ -164,6 +162,13 @@
         timer = setTimeout(showSlides, slideshowSpeed);
     }
     showSlides();
+    const radios = document.querySelectorAll('input[type="radio"][name="radio"]');
+    radios.forEach((radio) => {
+        radio.addEventListener('change', () => {
+            document.body.className = radio.nextElementSibling.textContent.toLowerCase(); 
+        });
+    });
+
 </script>
 
 </body>

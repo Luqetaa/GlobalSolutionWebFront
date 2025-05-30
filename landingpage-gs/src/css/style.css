@@ -53,7 +53,7 @@ header {
 
 .navbar li a {
   text-decoration: none;
-  color: #1e2630;
+  color: var(--main-text-color);
   font-family:monospace;
   font-size: 15px;
   padding: 4px 8px;
@@ -63,7 +63,7 @@ header {
 }
 
 .navbar li a:hover {
-  color: #6d6d6d;
+  color: var(--complementary-color);
 }
 
 /* seletor de tema */
@@ -115,7 +115,49 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.336);
 }
 
-/* main ajustado pro header fixo */
+body.claro {
+  --main-bg-color: #fdfff0;
+  --main-text-color: #262626;
+}
+
+body.escuro {
+  --main-bg-color: #1e1e1e;
+  --main-text-color: #eaeaea;
+  --second-bg-color: #3b473d;
+  button {
+    background: #262626;
+    color: #eaeaea;
+    border: 2px solid #eaeaea;
+    box-shadow: 3px 3px #eaeaea;
+  }
+  .texto-sessao2 img {
+    filter: invert(1); 
+  }
+  button:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+  }
+}
+
+body.alternativo {
+  --main-bg-color: #1e1e1e;
+  --main-text-color: #eaeaea;
+  --second-bg-color: #236692;
+  button {
+    background: #262626;
+    color: #eaeaea;
+    border: 2px solid #eaeaea;
+    box-shadow: 3px 3px #eaeaea;
+  }
+  .texto-sessao2 img {
+    filter: invert(1) sepia(0.5) hue-rotate(180deg); 
+  }
+  button:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+  }
+}
+
 main {
   padding-top: 120px;
 }
@@ -144,7 +186,15 @@ main {
   font-weight: bold;
   color: var(--main-text-color);
   margin-bottom: 16px;
-
+}
+.tagline-centralizada {
+  text-decoration: underline;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--main-text-color);
+  margin-bottom: 16px;
+  text-align: center;
 }
 
 .texto-titulo {
@@ -164,7 +214,7 @@ main {
 .texto-sessao1 p {
   font-size: 20px;
   line-height: 1.6;
-  color: #444;
+  color: var(--main-text-color);
   margin-bottom: 20px;
 }
 
@@ -300,13 +350,13 @@ img {
 .lista-topico li strong {
   display: inline-block;
   width: 30px;
-  color: #888;
+  color: var(--main-text-color);
 }
 
 button {
   font-family: monospace;
   font-size: 20px;
-  color: #252525;
+  color: #262626;
   padding: 10px 20px;
   border-radius: 10px;
   border: 2px solid #252525;
@@ -329,6 +379,7 @@ button:active {
   height: 600px;    
   margin: 0 auto 40px auto;
   overflow: hidden; 
+  
 }
 
 .imagem-slideshow img {
