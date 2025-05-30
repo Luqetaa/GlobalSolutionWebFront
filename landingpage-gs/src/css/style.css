@@ -329,7 +329,6 @@ button:active {
   height: 600px;    
   margin: 0 auto 40px auto;
   overflow: hidden; 
-  border-radius: 15px;
 }
 
 .imagem-slideshow img {
@@ -339,6 +338,7 @@ button:active {
   object-position: 50% 50%;
   display: block;
   margin: 0 auto;
+  border-radius: 15px;
 }
 
 .fade {
