@@ -48,7 +48,7 @@
                     <h1>Monitoramento Inteligente contra Enchentes.</h1>
                 </div>  
                 <p>Enchentes no Brasil causam destruição, desalojam famílias, evidenciam falhas urbanas e exigem soluções urgentes.</p>
-                <button>Leia mais</button>
+                <button class="botao1">Leia mais</button>
             </div> 
             <div class="img-container">
                 <div class="notebook-sombra-container">
@@ -95,7 +95,7 @@
                 <li><strong>03</strong> Inteligência Artificial: Prevê enchentes com base em padrões.</li>
                 <li><strong>04</strong> Web/Mobile: Mostra alertas e mapas de forma acessível. </li>
                 </ul>
-                <button>Leia Mais</button>
+                <button class="botao1">Leia Mais</button>
             </div>
 
            <div class="imagem-slideshow">
@@ -115,9 +115,33 @@
                     <div class="progress-bar" id="progressBar"></div>
                 </div>
             </div>
+        </div> 
+        <div class="sessao2 scroll-animada">
+            <div class="texto-titulo scroll-animada">
+                <p class="tagline-centralizada">Benefícios</p>
+                <h1>Benefícios Oferecidos</h1>
+            </div>
+            <div class="abas">
+                <button class="aba ativa" onclick="mostrarConteudo('produtividade')">Alertas antecipados</button>
+                <button class="aba" onclick="mostrarConteudo('visual')">Gestão eficiente</button>
+                <button class="aba" onclick="mostrarConteudo('siri')">Redução de perdas</button>
+            </div>
+            <div class="conteudos">
+                <div class="conteudo-aba" id="produtividade" style="display:block;">
+                    <h3>Ferramentas para você escrever, manter o foco e se comunicar melhor.</h3>
+                    <p>Exemplo de conteúdo para produtividade.</p>
+                </div>
+                <div class="conteudo-aba" id="visual" style="display:none;">
+                    <h3>Mostre seu lado visual.</h3>
+                    <p>Exemplo de conteúdo para visual.</p>
+                </div>
+                <div class="conteudo-aba" id="siri" style="display:none;">
+                    <h3>Uma nova era para a Siri.</h3>
+                    <p>Exemplo de conteúdo para Siri.</p>
+                </div>
+            </div>
         </div>
     </main>
-    
 <script>
     const elementos = document.querySelectorAll('.scroll-animada');
 
@@ -168,6 +192,25 @@
             document.body.className = radio.nextElementSibling.textContent.toLowerCase(); 
         });
     });
+
+    function mostrarConteudo(conteudoId) {
+        const conteudos = document.querySelectorAll('.conteudo-aba');
+        conteudos.forEach(conteudo => {
+            if (conteudo.id === conteudoId) {
+                conteudo.style.display = 'block';
+            } else {
+                conteudo.style.display = 'none';
+            }
+        });
+
+        const abas = document.querySelectorAll('.aba');
+        abas.forEach(aba => {
+            if (aba.classList.contains('ativa')) {
+                aba.classList.remove('ativa');
+            }
+        });
+        document.querySelector(`.aba[onclick="mostrarConteudo('${conteudoId}')"]`).classList.add('ativa');
+    }
 
 </script>
 
