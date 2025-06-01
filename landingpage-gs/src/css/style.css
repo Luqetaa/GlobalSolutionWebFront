@@ -426,57 +426,80 @@ img {
 
 
 .abas {
-    display: flex;
-    justify-content: center;
-    gap: 18px;
-    margin-bottom: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 28px;
 }
 
 .aba {
-    font-family: monospace;
-    font-size: 18px;
-    color: var(--main-text-color);
-    padding: 10px 28px;
-    border-radius: 10px;
-    border: 2px solid #252525;
-    background: var(--main-bg-color);
-    box-shadow: 3px 3px #252525;
-    cursor: pointer;
-    margin-bottom: 0;
-    font-weight: bold;
-    transition: 
-        background 0.2s,
-        color 0.2s,
-        box-shadow 0.2s,
-        transform 0.1s;
+  font-family: monospace;
+  font-size: 18px;
+  color: var(--main-text-color);
+  padding: 10px 28px;
+  border-radius: 10px;
+  border: 2px solid #252525;
+  background: var(--main-bg-color);
+  box-shadow: 3px 3px #252525;
+  cursor: pointer;
+  margin-bottom: 0;
+  font-weight: bold;
+  transition: 
+  background 0.2s,
+  color 0.2s,
+  box-shadow 0.2s,
+  transform 0.1s;
 }
 
 .aba.ativa,
 .aba:active {
-    background: var(--complementary-color);
-    color: #fff;
-    box-shadow: none;
-    transform: translate(3px, 3px);
-    border: 2px solid var(--complementary-color);
+  background: var(--complementary-color);
+  color: #fff;
+  box-shadow: none;
+  transform: translate(3px, 3px);
+  border: 2px solid var(--complementary-color);
 }
 
 .aba:hover:not(.ativa) {
-    background: #e6f2ec;
-    color: var(--complementary-color);
+  background: #e6f2ec;
+  color: var(--complementary-color);
 }
 
 .conteudos {
-    width: 100%;
+  width: 100%;
+  display: flex;
 }
 
 .conteudo-aba {
-    background: none;
-    border-radius: 12px;
-    padding: 18px 10px 6px 10px;
-    min-height: 70px;
-    text-align: center;
-    color: var(--main-text-color);
-    font-family: 'Poppins', Arial, sans-serif;
-    font-size: 17px;
-    transition: background 0.2s;
+  margin: auto;
+  color: #262626;
+  padding: 10px 20px;
+  border-radius: 10px;  
+  border: 2px solid #252525;
+  background: #fdfff0;
+  box-shadow: 3px 3px #252525;
+  width: 725px;
+  height: 120px;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 17px;
+}
+
+.footer-content {
+  background-color: #1e1e1e;
+  padding-top: 20px;
+}
+.footer-content p {
+  margin-left: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fdfff0;
+}
+.footer-content .titulo-cabecalho {
+  font-family: 'EB Garamond';
+  font-weight: 900;
+  font-size: 75px;
+  color: #fdfff0;
+  padding-left: 500px;  
+  padding-bottom: 60px;
 }
