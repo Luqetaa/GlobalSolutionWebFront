@@ -252,6 +252,7 @@ main {
   transform: scale(1.05);
   animation: fadeSlideIn 1.5s ease-out forwards;
   animation: blurFadeIn 1s ease-out forwards;
+  border-radius:15px;
 }
 
 @keyframes fadeSlideIn {
@@ -487,6 +488,7 @@ img {
 .footer-content {
   background-color: #1e1e1e;
   padding-top: 20px;
+  padding-bottom: 10px;
 }
 .footer-content p {
   margin-left: 500px;
@@ -501,5 +503,5 @@ img {
   font-size: 75px;
   color: #fdfff0;
   padding-left: 500px;  
-  padding-bottom: 60px;
+  padding-bottom: 140px;
 }
