@@ -473,12 +473,12 @@ img {
 
 .conteudo-aba {
   margin: auto;
-  color: #262626;
+  color: var(--main-text-color);
   padding: 10px 20px;
   border-radius: 10px;  
-  border: 2px solid #252525;
-  background: #fdfff0;
-  box-shadow: 3px 3px #252525;
+  border: 2px solid var(--main-text-color);
+  background: var(--main-bg-color);
+  box-shadow: 3px 3px var(--main-text-color);
   width: 725px;
   height: 120px;
   font-family: 'Poppins', Arial, sans-serif;
