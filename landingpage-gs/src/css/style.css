@@ -7,7 +7,7 @@
 /* variaveis */
 :root {
   --main-bg-color: #fdfff0;
-  --second-bg-color: #a6c8ad;
+  --second-bg-color: #bddbb9;
   --complementary-color: #325947;
   --main-text-color: #262626;
   
@@ -16,10 +16,10 @@
 .titulo-cabecalho {
   font-family: 'EB Garamond';
   font-weight: 900;
-  font-size: 75px;
+  font-size: 5vw; /* era 75px */
   color: var(--main-text-color);
-  padding-left: 500px; 
-  padding-top: 25px;
+  padding-left: 18vw; /* era 500px */
+  padding-top: 2vw;   /* era 25px */
 }
 
 
@@ -43,7 +43,8 @@ header {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.336);
-  padding: 10px 20px;
+  padding: 12px 20px;
+  margin-top: 35px;
 }
 
 .navbar ul {
@@ -69,8 +70,8 @@ header {
 /* seletor de tema */
 .radio-inputs {
   position:absolute;
-  top: 45px;      
-  right: 400px;     
+  top: 84px;      
+  right: 16%;     
   z-index: 1000;
   display: flex;
   flex-wrap: wrap;
@@ -167,13 +168,13 @@ main {
   display: flex;
   align-items: flex-start; /* Centraliza verticalmente */
   justify-content: space-between; /* Espaça os dois lados */
-  gap: 60px;
-  padding: 80px 100px; /* Espaçamento interno mais proporcional */
+  gap: 4vw; /* era 60px */
+  padding: 6vw 8vw; /* era 80px 100px */ /* Espaçamento interno mais proporcional */
 }
 
 .texto-sessao1 {
-  margin-left: 400px;
-  max-width: 550px;
+  margin-left: 10vw; /* era 400px */
+  max-width: 35vw;   /* era 550px */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -224,6 +225,7 @@ main {
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-right: 10vw; 
 }
 
 .notebook-sombra-container {
@@ -231,21 +233,33 @@ main {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  width: 100%;
+  max-width: 800px; /* ajuste conforme necessário */
+  margin: 0 auto;
 }
+
 .notebook-sombra {
   position: absolute;
   top: 12%;
   transform: translateX(-50%);
-  width: 120%;
+  width: 100%; /* ajuste para aumentar/diminuir a sombra */
+  max-width: 800px; /* limite máximo */
+  height: auto;
+  z-index: 1;
 }
+
 .notebook-img {
   position: relative;
-  width: 100%;
+  width: 100%; /* ajuste para o tamanho desejado */
+  max-width: 800px; /* limite máximo */
+  height: auto;
   z-index: 2;
+  display: block;
+  margin: 0 auto;
 }
 
 .img-container img {
-  width: 70%;
+  width: 1000%;
   height: auto;
   opacity: 0;
   filter: blur(10px);
@@ -479,10 +493,12 @@ img {
   border: 2px solid var(--main-text-color);
   background: var(--main-bg-color);
   box-shadow: 3px 3px var(--main-text-color);
-  width: 725px;
-  height: 120px;
-  font-family: 'Poppins', Arial, sans-serif;
-  font-size: 17px;
+  width: 50vw;   /* era 725px */
+  height: auto;  /* era 120px, deixe auto para crescer conforme o conteúdo */
+  font-size: 1.1rem; /* era 17px */
+}
+.img-solucao{
+  border-radius: 15px;
 }
 
 .footer-content {
@@ -491,7 +507,7 @@ img {
   padding-bottom: 10px;
 }
 .footer-content p {
-  margin-left: 500px;
+  margin-left: 10vw; /* era 500px */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -500,8 +516,38 @@ img {
 .footer-content .titulo-cabecalho {
   font-family: 'EB Garamond';
   font-weight: 900;
-  font-size: 75px;
+  font-size: 5vw; /* era 75px */
   color: #fdfff0;
-  padding-left: 500px;  
-  padding-bottom: 140px;
+  padding-left: 10vw; /* era 500px */
+  padding-bottom: 10vw; /* era 140px */
+}
+.img-lago{
+  width: 100%;
+  height: auto;
+  max-width: 600px; 
+  margin: 0 auto;
+  display: flex;
+}
+
+main, .conteudos, .sessao2, .texto-sessao2 {
+  max-width: 2560px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .titulo-cabecalho,
+  .footer-content .titulo-cabecalho {
+    font-size: 8vw;
+    padding-left: 4vw;
+    padding-bottom: 6vw;
+  }
+  .texto-sessao1 {
+    margin-left: 2vw;
+    max-width: 90vw;
+  }
+  .conteudo-aba {
+    width: 90vw;
+    font-size: 1rem;
+  }
 }
