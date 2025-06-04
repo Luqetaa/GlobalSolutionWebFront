@@ -45,6 +45,9 @@ html {
   padding-top: 2vw;   /* era 25px */
 }
 
+#tituloRivur{
+  text-decoration: none;
+}
 
 body {
   font-family:'Poppins';
@@ -574,3 +577,6 @@ main, .conteudos, .sessao2, .texto-sessao2 {
     font-size: 1rem;
   }
 }
+
+/* Parte do contato */
+
