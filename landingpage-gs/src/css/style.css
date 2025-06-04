@@ -4,6 +4,29 @@
   padding: 0;
   color: var(--main-text-color);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+[id]{
+  scroll-margin-top: 250px;
+}
+
+#problemas {
+  scroll-margin-top: 180px;
+}
+
+#tecnologias {
+  scroll-margin-top: 170px;
+}
+
+#solucoes {
+  scroll-margin-top: 150px;
+}
+
+
 /* variaveis */
 :root {
   --main-bg-color: #fdfff0;
@@ -57,7 +80,7 @@ header {
   color: var(--main-text-color);
   font-family:monospace;
   font-size: 15px;
-  padding: 4px 30px;
+  padding: 4px 8px;
   border-radius: 40px;
   transition: all 0.3s ease;
   font-weight: bold;
