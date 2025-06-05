@@ -39,10 +39,10 @@ html {
 .titulo-cabecalho {
   font-family: 'EB Garamond';
   font-weight: 900;
-  font-size: 5vw; /* era 75px */
+  font-size: 5vw; 
   color: var(--main-text-color);
-  padding-left: 18vw; /* era 500px */
-  padding-top: 2vw;   /* era 25px */
+  padding-left: 10vw; 
+  padding-top: 2vw;   
 }
 
 #tituloRivur{
@@ -64,10 +64,10 @@ header {
   z-index: 1000;
 }
 .navbar {
-  background: rgba(255, 255, 255, 0.29);
+  background: rgba(255, 255, 255, 0.26);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.336);
   padding: 12px 20px;
   margin-top: 35px;
@@ -97,7 +97,7 @@ header {
 .radio-inputs {
   position:absolute;
   top: 84px;      
-  right: 16%;     
+  right: 10%;     
   z-index: 1000;
   display: flex;
   flex-wrap: wrap;
@@ -137,7 +137,6 @@ header {
   background: rgba(255, 255, 255, 0.29);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.336);
 }
@@ -192,15 +191,15 @@ main {
 
 .sessao1 {
   display: flex;
-  align-items: flex-start; /* Centraliza verticalmente */
-  justify-content: space-between; /* Espaça os dois lados */
-  gap: 4vw; /* era 60px */
-  padding: 6vw 8vw; /* era 80px 100px */ /* Espaçamento interno mais proporcional */
+  align-items: flex-start; 
+  justify-content: space-between; 
+  gap: 4vw; 
+  padding: 6vw 8vw; 
 }
 
 .texto-sessao1 {
-  margin-left: 10vw; /* era 400px */
-  max-width: 35vw;   /* era 550px */
+  margin-left: 10vw;
+  max-width: 35vw; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -260,7 +259,7 @@ main {
   align-items: flex-end;
   justify-content: center;
   width: 100%;
-  max-width: 800px; /* ajuste conforme necessário */
+  max-width: 800px; 
   margin: 0 auto;
 }
 
@@ -268,16 +267,16 @@ main {
   position: absolute;
   top: 12%;
   transform: translateX(-50%);
-  width: 100%; /* ajuste para aumentar/diminuir a sombra */
-  max-width: 800px; /* limite máximo */
+  width: 100%; 
+  max-width: 800px; 
   height: auto;
   z-index: 1;
 }
 
 .notebook-img {
   position: relative;
-  width: 100%; /* ajuste para o tamanho desejado */
-  max-width: 800px; /* limite máximo */
+  width: 100%; 
+  max-width: 800px; 
   height: auto;
   z-index: 2;
   display: block;
@@ -342,7 +341,7 @@ img {
   justify-content: center;
   gap: 30px;
   padding: 40px 20px;
-  text-align: center; /* Centraliza o texto */
+  text-align: center;
   background-color: var(--second-bg-color);
 }
 
@@ -354,7 +353,7 @@ img {
   flex-direction: row;
   justify-content: center;
   gap: 60px;
-  text-align: center; /* Centraliza o texto dos blocos */
+  text-align: center; 
 }
 
 .texto-sessao2 > div {
@@ -519,9 +518,9 @@ img {
   border: 2px solid var(--main-text-color);
   background: var(--main-bg-color);
   box-shadow: 3px 3px var(--main-text-color);
-  width: 50vw;   /* era 725px */
-  height: auto;  /* era 120px, deixe auto para crescer conforme o conteúdo */
-  font-size: 1.1rem; /* era 17px */
+  width: 50vw;   
+  height: auto;  
+  font-size: 1.1rem; 
 }
 .img-solucao{
   border-radius: 15px;
@@ -533,7 +532,7 @@ img {
   padding-bottom: 10px;
 }
 .footer-content p {
-  margin-left: 10vw; /* era 500px */
+  margin-left: 10vw; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -542,10 +541,10 @@ img {
 .footer-content .titulo-cabecalho {
   font-family: 'EB Garamond';
   font-weight: 900;
-  font-size: 5vw; /* era 75px */
+  font-size: 5vw; 
   color: #fdfff0;
-  padding-left: 10vw; /* era 500px */
-  padding-bottom: 10vw; /* era 140px */
+  padding-left: 10vw;
+  padding-bottom: 10vw; 
 }
 .img-lago{
   width: 100%;
@@ -577,6 +576,3 @@ main, .conteudos, .sessao2, .texto-sessao2 {
     font-size: 1rem;
   }
 }
-
-/* Parte do contato */
-
