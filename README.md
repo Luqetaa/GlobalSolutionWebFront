@@ -52,5 +52,5 @@ A landing page está organizada nas seguintes seções:
 
 ## 👨‍💻 Desenvolvedores
 
-- **Lucas Cavalcante**  
-- **Matheus Rodrigues**
+- **Lucas Cavalcante RM 562857**  
+- **Matheus Rodrigues RM 561689**
