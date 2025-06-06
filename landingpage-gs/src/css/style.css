@@ -1,3 +1,4 @@
+/* reset e variaveis */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +11,7 @@ html {
 }
 
 
+/* ajuste scroll anchor */
 [id]{
   scroll-margin-top: 250px;
 }
@@ -190,6 +192,7 @@ main {
 }
 
 
+/* sessão 1 */
 .sessao1 {
   display: flex;
   align-items: flex-start; 
@@ -206,6 +209,7 @@ main {
   justify-content: center;
 }
 
+/* textos */
 .tagline {
   text-decoration: underline;
   font-family: monospace;
@@ -247,6 +251,7 @@ main {
   margin-bottom: 20px;
 }
 
+/* imagens */
 .img-container {
   flex: 1;
   display: flex;
@@ -297,6 +302,7 @@ main {
   border-radius:15px;
 }
 
+/* animacoes */
 @keyframes fadeSlideIn {
   0% {
     opacity: 0;
@@ -337,6 +343,7 @@ img {
   max-width: 100%;
 }
 
+/* sessão 2 */
 .sessao2 {
   display: flex;
   flex-direction: column;
@@ -377,6 +384,7 @@ img {
   margin-bottom: 10px;
 }
 
+/* listas */
 .lista-topico {
   list-style: none;
   padding: 0;
@@ -396,6 +404,7 @@ img {
   color: var(--main-text-color);
 }
 
+/* botao */
 .botao1 {
   font-family: monospace;
   font-size: 20px;
@@ -415,6 +424,7 @@ img {
   transform: translate(3px, 3px);
 }
 
+/* slideshow */
 .imagem-slideshow {
   position: relative;
   width: 100%;
@@ -445,11 +455,12 @@ img {
   to {opacity: 1}
 }
 
+/* barra de progresso */
 .container-progress {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 760px;
+  width: 730px;
   height: 10px;
   background: rgba(255, 255, 255, 0.29);
   border-radius: 16px;
@@ -468,6 +479,7 @@ img {
 
 
 
+/* abas */
 .abas {
   display: flex;
   justify-content: center;
@@ -529,6 +541,7 @@ img {
   border-radius: 15px;
 }
 
+/* footer */
 .footer-content {
   background-color: #1e1e1e;
   padding-top: 20px;
@@ -564,6 +577,7 @@ main, .conteudos, .sessao2, .texto-sessao2 {
   padding-top: 0px;
 }
 
+/* responsivo */
 @media (max-width: 900px) {
   .titulo-cabecalho,
   .footer-content .titulo-cabecalho {

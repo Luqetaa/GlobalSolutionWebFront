@@ -165,25 +165,29 @@
             <img src="./landingpage-gs/src/imgs/evacuaçao.jpg" alt="Simulação de evacuação de uma cidade" class="img-solucao">
         </div>
     </main>
-    <footer>
-        <div class="footer-content">
-            <div class="titulo-cabecalho">Rivur.</div> 
+</body>
+<footer>
+    <div class="footer-content">
+        <div class="titulo-cabecalho">Rivur.</div> 
             <p>2025 Rivur inc. Todos os direitos reservados.</p>
-            <p>Desenvolvido por Lucas Cavalcante e Matheus Rocha.</p>
-    </footer>
+        <p>Desenvolvido por Lucas Cavalcante e Matheus Rocha.</p>
+</footer>
 <script>
+    // Script para animação de scroll
     const elementos = document.querySelectorAll('.scroll-animada');
-
-    const observer = new IntersectionObserver((entradas) => {
-        entradas.forEach(entrada => {
-        if (entrada.isIntersecting) {
-            entrada.target.classList.add('mostrar');
+    const observer = new IntersectionObserver(function(entradas) {
+        for (let i = 0; i < entradas.length; i++) {
+            if (entradas[i].isIntersecting) {
+                entradas[i].target.classList.add('mostrar');
+            }
         }
-        });
-    }, { threshold: 0.1 });
+    });
 
-    elementos.forEach(el => observer.observe(el));
+    for (let i = 0; i < elementos.length; i++) {
+        observer.observe(elementos[i]);
+    }
     
+    // Script para o slideshow
     let slideIndex = 0;
     const slides = document.querySelectorAll(".slide");
     const progressBar = document.getElementById("progressBar");
@@ -215,12 +219,16 @@
         timer = setTimeout(showSlides, slideshowSpeed);
     }
     showSlides();
+
+    // Script para o seletor de tema
     const radios = document.querySelectorAll('input[type="radio"][name="radio"]');
     for (let i = 0; i < radios.length; i++) {
         radios[i].addEventListener('change', function() {
             document.body.className = radios[i].nextElementSibling.textContent.toLowerCase();
         });
     }
+    
+    // Script conteúdo das abas
     function mostrarConteudo(conteudoId) {
 
         document.getElementById('alertas').style.display = 'none';
@@ -234,6 +242,4 @@
     }   
 
 </script>
-
-</body>
 </html>

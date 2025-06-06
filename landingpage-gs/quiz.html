@@ -40,6 +40,7 @@
             <span class="name">Alternativo</span>
         </label>
     </div>
+    <p class="tagline-centralizada">Quiz</p>
     <main>
         <div class="quiz-container">
             <h1>Quiz</h1>
@@ -148,10 +149,11 @@
         </div>
     </footer>
 <script>
+// Script para o seletor de tema
 document.getElementById('quiz-form').addEventListener('submit', function(e) {
   e.preventDefault();
 
-  // Respostas corretas
+
   const corretas = [
     "1c",
     "2c",
@@ -187,6 +189,7 @@ document.getElementById('quiz-form').addEventListener('submit', function(e) {
     );
   }
 });
+// Script para o seletor de tema
 const radios = document.querySelectorAll('input[type="radio"][name="radio"]');
 for (let i = 0; i < radios.length; i++) {
     radios[i].addEventListener('change', function() {

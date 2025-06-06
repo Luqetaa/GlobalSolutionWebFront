@@ -1,3 +1,4 @@
+/* reset e variaveis */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -33,11 +34,13 @@ html {
   text-decoration: none;
 }
 
+/* corpo */
 body {
   font-family:'Poppins';
   background-color: var(--main-bg-color);
 }
 
+/* cabeçalho */
 header {
   position: fixed;
   top: 45px;
@@ -47,6 +50,7 @@ header {
   z-index: 1000;
 }
 
+/* navbar */
 .navbar {
   background: rgba(255, 255, 255, 0.26);
   border-radius: 16px;
@@ -77,7 +81,7 @@ header {
   color: var(--complementary-color);
 }
 
-/* Tema */
+/* seletor de tema */
 .radio-inputs {
   position:absolute;
   top: 84px;      
@@ -125,6 +129,7 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.336);
 }
 
+/* temas */
 body.claro {
   --main-bg-color: #fdfff0;
   --main-text-color: #262626;
@@ -187,11 +192,13 @@ body.alternativo {
   }
 }
 
+/* main */
 main {
   padding-top: 60px;
   min-height: calc(100vh - 300px);
 }
 
+/* textos */
 .tagline-centralizada {
   text-decoration: underline;
   font-family: monospace;
@@ -216,6 +223,7 @@ main {
   color: var(--main-text-color);
 }
 
+/* animacao */
 @keyframes fadeSlideIn {
   0% {
     opacity: 0;
@@ -238,6 +246,7 @@ main {
   transform: translateY(0);
 }
 
+/* botao */
 .botao1 {
   font-family: monospace;
   font-size: 20px;
@@ -257,30 +266,7 @@ main {
   transform: translate(3px, 3px);
 }
 
-.footer-content {
-  background-color: #1e1e1e;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
-.footer-content p {
-  margin-left: 10vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #fdfff0;
-}
-
-.footer-content .titulo-cabecalho {
-  font-family: 'EB Garamond';
-  font-weight: 900;
-  font-size: 5vw;
-  color: #fdfff0;
-  padding-left: 10vw;
-  padding-bottom: 10vw;
-}
-
-/* Apenas área de contato ------------- */
+/* contato */
 .contato-container {
   max-width: 800px;
   margin: 0 auto;
@@ -310,7 +296,7 @@ main {
   flex: 1;
 }
 
-label {
+form label {
   display: block;
   margin-bottom: 8px;
   font-family: 'Poppins', sans-serif;
@@ -343,6 +329,7 @@ button[type="submit"] {
   margin: 35px auto;
 }
 
+/* responsivo */
 @media (max-width: 900px) {
   .titulo-cabecalho,
   .footer-content .titulo-cabecalho {
@@ -384,4 +371,28 @@ button[type="submit"] {
   main {
     padding-top: 60px;
   }
+}
+
+/* footer */
+.footer-content {
+  background-color: #1e1e1e;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.footer-content p {
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fdfff0;
+}
+
+.footer-content .titulo-cabecalho {
+  font-family: 'EB Garamond';
+  font-weight: 900;
+  font-size: 5vw;
+  color: #fdfff0;
+  padding-left: 10vw;
+  padding-bottom: 10vw;
 }
