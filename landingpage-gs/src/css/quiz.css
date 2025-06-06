@@ -186,7 +186,7 @@ body.alternativo {
 }
 
 
-/* --------------------------------------------------------------- */
+/* ------------------------------formulario do quiz--------------------------------- */
 
 main {
   max-width: 800px;
@@ -271,7 +271,7 @@ select:focus {
   padding-bottom: 10px;
 }
 .footer-content p {
-  margin-left: 10vw; /* era 500px */
+  margin-left: 10vw; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -280,10 +280,10 @@ select:focus {
 .footer-content .titulo-cabecalho {
   font-family: 'EB Garamond';
   font-weight: 900;
-  font-size: 5vw; /* era 75px */
+  font-size: 5vw; 
   color: #fdfff0;
-  padding-left: 10vw; /* era 500px */
-  padding-bottom: 10vw; /* era 140px */
+  padding-left: 10vw; 
+  padding-bottom: 10vw; 
 }
 
 

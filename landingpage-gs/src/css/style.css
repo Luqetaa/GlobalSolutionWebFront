@@ -169,8 +169,9 @@ body.alternativo {
   --main-bg-color: #1e1e1e;
   --main-text-color: #eaeaea;
   --second-bg-color: #236692;
+  --complementary-color: #194867;
   button {
-    background: #262626;
+    background: var(--complementary-color);
     color: #eaeaea;
     border: 2px solid #eaeaea;
     box-shadow: 3px 3px #eaeaea;
@@ -219,8 +220,10 @@ main {
   font-size: 16px;
   font-weight: bold;
   color: var(--main-text-color);
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  margin-top: 30px;
   text-align: center;
+
 }
 
 .texto-titulo {

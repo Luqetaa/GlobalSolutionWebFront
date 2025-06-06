@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Quiz - Rivur</title>
     <link rel="stylesheet" href="./src/css/quiz.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,17 +11,17 @@
 </head>
 <body>
     <div class="titulo-cabecalho">
-        <a href="index.html" id="tituloRivur">Rivur.</a>
+        <a href="/index.html" id="tituloRivur">Rivur.</a>
     </div> 
     <header>     
         <nav class="navbar">
             <ul>
-                <li><a class="active" href="index.html">Problemas</a></li>
-                <li><a href="index.html">Objetivos</a></li>
-                <li><a href="index.html">Tecnologias</a></li>
-                <li><a href="index.html">Benefícios</a></li>
-                <li><a href="index.html">Público-Alvo</a></li>
-                <li><a href="index.html">Soluções</a></li>
+                <li><a class="active" href="/index.html">Problemas</a></li>
+                <li><a href="/index.html">Objetivos</a></li>
+                <li><a href="/index.html">Tecnologias</a></li>
+                <li><a href="/index.html">Benefícios</a></li>
+                <li><a href="/index.html">Público-Alvo</a></li>
+                <li><a href="/index.html">Soluções</a></li>
             </ul>
         </nav>
     </header>
@@ -138,19 +138,20 @@
                 <button type="submit" class="botao-submit">Enviar</button>
             </form>
         </div>
-    </main>
+    </main>   
+</body>
     <footer>
         <div class="footer-content">
                <div class="titulo-cabecalho">Rivur.</div> 
             <p>2025 Rivur inc. Todos os direitos reservados.</p>
             <p>Desenvolvido por Lucas Cavalcante e Matheus Rocha.</p>
+        </div>
     </footer>
-</body>
 <script>
 document.getElementById('quiz-form').addEventListener('submit', function(e) {
   e.preventDefault();
 
-  // Respostas corretas (por value)
+  // Respostas corretas
   const corretas = [
     "1c",
     "2c",

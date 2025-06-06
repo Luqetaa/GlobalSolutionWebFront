@@ -9,22 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+<header>     
+    <nav class="navbar">
+        <ul>
+            <li><a href="/index.html#problemas">Problemas</a></li>
+            <li><a href="/index.html#objetivos">Objetivos</a></li>
+            <li><a href="/index.html#tecnologias">Tecnologias</a></li>
+            <li><a href="/index.html#beneficios">Benefícios</a></li>
+            <li><a href="/index.html#publicoAlvo">Público-Alvo</a></li>
+            <li><a href="/index.html#solucoes">Soluções</a></li>
+        </ul>
+    </nav>
+</header>
 <body>
     <div class="titulo-cabecalho">
-        <a href="index.html" id="tituloRivur">Rivur.</a>
+        <a href="/index.html" id="tituloRivur">Rivur.</a>
     </div> 
-    <header>     
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html#problemas">Problemas</a></li>
-                <li><a href="index.html#objetivos">Objetivos</a></li>
-                <li><a href="index.html#tecnologias">Tecnologias</a></li>
-                <li><a href="index.html#beneficios">Benefícios</a></li>
-                <li><a href="index.html#publicoAlvo">Público-Alvo</a></li>
-                <li><a href="index.html#solucoes">Soluções</a></li>
-            </ul>
-        </nav>
-    </header>
 
     <div class="radio-inputs">
         <label class="radio">
@@ -81,7 +81,7 @@
             </div>
         </div>
     </main>
-    
+</body>
     <footer>
         <div class="footer-content">
             <div class="titulo-cabecalho">Rivur.</div> 
@@ -89,34 +89,34 @@
             <p>Desenvolvido por Lucas Cavalcante e Matheus Rocha.</p>
         </div>
     </footer>
-
     <script>
-        // Script para o seletor de tema
-        const radios = document.querySelectorAll('input[type="radio"][name="radio"]');
-        radios.forEach((radio) => {
-            radio.addEventListener('change', () => {
-                document.body.className = radio.nextElementSibling.textContent.toLowerCase(); 
-            });
+    // Script para o seletor de tema
+    const radios = document.querySelectorAll('input[type="radio"][name="radio"]');
+    for (let i = 0; i < radios.length; i++) {
+        radios[i].addEventListener('change', function() {
+            document.body.className = radios[i].nextElementSibling.textContent.toLowerCase();
         });
+    }
 
-        // Script para animação de scroll
-        const elementos = document.querySelectorAll('.scroll-animada');
-        const observer = new IntersectionObserver((entradas) => {
-            entradas.forEach(entrada => {
-                if (entrada.isIntersecting) {
-                    entrada.target.classList.add('mostrar');
-                }
-            });
-        }, { threshold: 0.1 });
+    // Script para animação de scroll
+    const elementos = document.querySelectorAll('.scroll-animada');
+    const observer = new IntersectionObserver(function(entradas) {
+        for (let i = 0; i < entradas.length; i++) {
+            if (entradas[i].isIntersecting) {
+                entradas[i].target.classList.add('mostrar');
+            }
+        }
+    }, { threshold: 0.1 });
 
-        elementos.forEach(el => observer.observe(el));
+    for (let i = 0; i < elementos.length; i++) {
+        observer.observe(elementos[i]);
+    }
 
-        // Script para o formulário
-        document.getElementById('form-contato').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Mensagem enviada com sucesso!');
-            this.reset();
-        });
-    </script>
-</body>
+    // Script para o formulário
+    document.getElementById('form-contato').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Mensagem enviada com sucesso!');
+        this.reset();
+    });
+</script>
 </html>

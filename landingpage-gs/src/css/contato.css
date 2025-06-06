@@ -25,8 +25,8 @@ html {
   font-weight: 900;
   font-size: 5vw;
   color: var(--main-text-color);
-  padding-left: 18vw;
-  padding-top: 2vw;
+  padding-left: 10vw; 
+  padding-top: 2vw;   
 }
 
 #tituloRivur{
