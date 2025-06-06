@@ -558,6 +558,7 @@ main, .conteudos, .sessao2, .texto-sessao2 {
   max-width: 2560px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 0px;
 }
 
 @media (max-width: 900px) {
