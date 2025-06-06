@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./src/css/quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="titulo-cabecalho">
+        <a href="index.html" id="tituloRivur">Rivur.</a>
+    </div> 
+    <header>     
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="index.html">Problemas</a></li>
+                <li><a href="index.html">Objetivos</a></li>
+                <li><a href="index.html">Tecnologias</a></li>
+                <li><a href="index.html">Benefícios</a></li>
+                <li><a href="index.html">Público-Alvo</a></li>
+                <li><a href="index.html">Soluções</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="radio-inputs">
+        <label class="radio">
+            <input type="radio" name="radio" checked="">
+            <span class="name">Claro</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="radio">
+            <span class="name">Escuro</span>
+        </label>     
+        <label class="radio">
+            <input type="radio" name="radio">
+            <span class="name">Alternativo</span>
+        </label>
+    </div>
+    <main>
+        <div class="quiz-container">
+            <h1>Quiz</h1>
+            <p>Responda às perguntas abaixo para descobrir qual é o seu perfil de usuário e como a Rivur pode ajudar você!</p>
+            <form id="quiz-form">
+                <div class="question">
+                    <label for="question1">1. Qual é a principal causa das enchentes nas áreas urbanas?</label>
+                    <select id="question1" name="question1">
+                        <option value="1a">A) Excesso de chuva natural</option>
+                        <option value="1b">B) Falta de árvores nas florestas</option>
+                        <option value="1c">C) Impermeabilização do solo e falta de drenagem adequada</option>
+                        <option value="1d">D) Uso de fertilizantes químicos</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question2">2. Qual destas ações ajuda a evitar o desperdício de água em casa?</label>
+                    <select id="question2" name="question2">
+                        <option value="2a">A) Lavar o carro com mangueira aberta</option>
+                        <option value="2b">B) Tomar banhos longos</option>
+                        <option value="2c">C) Fechar a torneira enquanto escova os dentes</option>
+                        <option value="2d">D) Lavar calçadas com mangueira</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question3">3. O que é um sistema de captação de água da chuva?</label>
+                    <select id="question3" name="question3">
+                        <option value="3a">A) Um tipo de poço profundo</option>
+                        <option value="3b">B) Um sistema que coleta e armazena água da chuva para reutilização</option>
+                        <option value="3c">C) Um sistema para evitar raios</option>
+                        <option value="3d">D) Um sistema de drenagem de esgoto</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question4">4. Qual é o papel da vegetação na prevenção de enchentes?</label>
+                    <select id="question4" name="question4">
+                        <option value="4a">A) Causar erosão no solo</option>
+                        <option value="4b">B) Aumentar o volume de rios</option>
+                        <option value="4c">C) Absorver a água da chuva e reduzir a velocidade do escoamento</option>
+                        <option value="4d">D) Nada, é apenas decorativa</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question5">5. Qual dessas atitudes é mais eficaz para evitar deslizamentos de terra?</label>
+                    <select id="question5" name="question5">
+                        <option value="5a">A) Construir casas no topo de morros</option>
+                        <option value="5b">B) Cortar toda a vegetação para "limpar" o terreno</option>
+                        <option value="5c">C) Preservar a vegetação nas encostas</option>
+                        <option value="5d">D) Jogar entulho em terrenos inclinados</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question6">6. O que é saneamento básico?</label>
+                    <select id="question6" name="question6">
+                        <option value="6a">A) Um conjunto de leis ambientais</option>
+                        <option value="6b">B) Infraestrutura para água potável, esgoto, resíduos e drenagem urbana</option>
+                        <option value="6c">C) Limpeza das ruas</option>
+                        <option value="6d">D) Estação de tratamento de lixo</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question7">7. Qual a relação entre lixo e enchentes?</label>
+                    <select id="question7" name="question7">
+                        <option value="7a">A) Nenhuma relação</option>
+                        <option value="7b">B) Lixo entope bueiros e impede o escoamento da água da chuva</option>
+                        <option value="7c">C) Lixo ajuda na fertilização do solo</option>
+                        <option value="7d">D) Lixo é biodegradável e some rapidamente</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question8">8. Qual destas atitudes ajuda a preservar os rios?</label>
+                    <select id="question8" name="question8">
+                        <option value="8a">A) Lançar esgoto diretamente nos rios</option>
+                        <option value="8b">B) Jogar lixo nas margens</option>
+                        <option value="8c">C) Evitar o uso excessivo de produtos químicos em casa</option>
+                        <option value="8d">D) Pescar com explosivos</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question9">9. Qual é a importância de economizar água mesmo em períodos sem seca?</label>
+                    <select id="question9" name="question9">
+                        <option value="9a">A) Para evitar multas</option>
+                        <option value="9b">B) Para diminuir o trabalho da companhia de água</option>
+                        <option value="9c">C) Porque a água potável é um recurso limitado e precioso</option>
+                        <option value="9d">D) Porque é moda ser ecológico</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question10">10. O que as sirenes de alerta em áreas de risco de enchente indicam?</label>
+                    <select id="question10" name="question10">
+                        <option value="10a">A) Promoções em mercados locais</option>
+                        <option value="10b">B) Que a chuva vai parar</option>
+                        <option value="10c">C) Que a população deve evacuar a área ou procurar abrigo imediatamente</option>
+                        <option value="10d">D) Que é seguro permanecer no local</option>
+                    </select>
+                </div>
+                <button type="submit" class="botao-submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+               <div class="titulo-cabecalho">Rivur.</div> 
+            <p>2025 Rivur inc. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Lucas Cavalcante e Matheus Rocha.</p>
+    </footer>
+</body>
+<script>
+document.getElementById('quiz-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  // Respostas corretas (por value)
+  const corretas = [
+    "1c",
+    "2c",
+    "3b",
+    "4c",
+    "5c",
+    "6b",
+    "7b",
+    "8c",
+    "9c",
+    "10c"
+  ];
+
+  let certas = [];
+  let erros = [];
+
+  for (let i = 1; i <= 10; i++) {
+    const resposta = document.getElementById('question' + i).value;
+    if (resposta === corretas[i-1]) {
+      certas.push(i);
+    } else {
+      erros.push(i);
+    }
+  }
+
+  if (erros.length === 0) {
+    alert(`Parabéns! Você acertou todas as perguntas!`);
+  } else {
+    alert(
+      `Você acertou ${certas.length}/10.\n` +
+      `Perguntas certas: ${certas.join(', ')}\n` +
+      `Perguntas erradas: ${erros.join(', ')}`
+    );
+  }
+});
+const radios = document.querySelectorAll('input[type="radio"][name="radio"]');
+for (let i = 0; i < radios.length; i++) {
+    radios[i].addEventListener('change', function() {
+        document.body.className = radios[i].nextElementSibling.textContent.toLowerCase();
+    });
+}
+</script>
+</html>
